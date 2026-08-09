@@ -5,7 +5,7 @@
 - Nettoyage du README et des anciens numéros de version de release.
 - Dépendances principales figées dans `requirements.txt`.
 - Ajout de `THIRD-PARTY-LICENSES.txt`.
-- Aucun changement fonctionnel apporté à l’overlay Black Box.
+
 
 ## 0.9.35 — Easter Egg
 
@@ -13,18 +13,18 @@
 - Un second clic arrête et remet le morceau au début.
 - Musique embarquée dans le build PyInstaller.
 - Crédit Pixabay ajouté au README.
-- Overlay Black Box inchangé.
+
 
 ## 0.9.34 — Screenshot Cleanup
 
 - Suppression de la fonction de capture d’écran intégrée et de son entrée dans le menu System Tray.
 - Nettoyage du code et de la documentation associés.
-- Overlay Black Box inchangé.
+
 
 ## 0.9.33 — RAM Labels
 
 - Écran principal : `DIMM#1`, `DIMM#2`, etc. deviennent `RAM #1`, `RAM #2`, etc.
-- Overlay Black Box inchangé.
+
 
 ## 0.9.31 — Black Box
 - Overlay simplifié en fenêtre noire opaque à coins carrés.
@@ -48,7 +48,7 @@
 - Les noms de ventilateurs incluent leur contrôleur matériel quand disponible.
 - 0 RPM est accepté pour les ventilateurs semi-passifs.
 - Lecture seule : aucun contrôle PWM dans cette version.
-- La logique de sauvegarde stable de la v0.8.6 est conservée.
+
 
 # Titan Monitor v0.8.6 — Hotplate Internal
 
@@ -72,7 +72,6 @@
 - Corrige les faux **CRITICAL** de l’overlay lorsque CPU/GPU sont simplement à forte charge.
 - Les sondes thermiques inconnues restent affichables mais ne peuvent plus déclencher une fausse alerte.
 
-# Changelog
 
 ## 0.8.4 — Hotplate (internal)
 
