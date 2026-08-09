@@ -1,6 +1,6 @@
 # Titan Monitor
 
-**Cyberpunk hardware monitoring for Windows**  
+**Hardware monitoring for Windows**  
 Version **1.0.0**
 
 Titan Monitor affiche en temps réel les températures et l’utilisation du CPU, du GPU et de la mémoire à partir de LibreHardwareMonitor. Il comprend un tableau de bord cyberpunk, un historique interactif, un overlay, des alertes thermiques, des journaux CSV et un diagnostic local.
@@ -73,19 +73,6 @@ Titan Monitor détecte automatiquement les disques physiques et les volumes loca
 La lecture de santé repose sur les API de stockage Windows. Elle n'égale pas systématiquement le niveau de détail de CrystalDiskInfo : certains contrôleurs ne transmettent pas tous les attributs SMART.
 
 
-## Construire la release
-
-Pour générer l'exécutable puis l'installateur Windows :
-
-```cmd
-build_release.bat
-```
-
-Prérequis de compilation : PyInstaller et Inno Setup 6. Le script indique la commande `winget` si Inno Setup manque.
-
-La release est créée dans `release\`. L'utilisateur final n'a besoin ni de Python ni de pip.
-
-
 ## Composants tiers
 
 Titan Monitor utilise plusieurs composants open source tiers. Les notices de licence
@@ -93,5 +80,5 @@ et informations de redistribution sont regroupées dans [`THIRD-PARTY-LICENSES.t
 
 ## Easter Egg music
 
-Easter Egg music: “Metalcore Music for Extreme Sports” — Farran_Ez  
+Easter Egg music: “Metalcore Music for Extreme Sports 20s” — Farran_Ez  
 Used under the Pixabay Content License.
