@@ -72,6 +72,14 @@ Titan Monitor détecte automatiquement les disques physiques et les volumes loca
 
 La lecture de santé repose sur les API de stockage Windows. Elle n'égale pas systématiquement le niveau de détail de CrystalDiskInfo : certains contrôleurs ne transmettent pas tous les attributs SMART.
 
+## Screenshots
+
+<img width="516" height="619" alt="image" src="https://github.com/user-attachments/assets/8ebe7fd5-558b-4b0f-9cba-565243c6cc80" />
+<img width="1883" height="1326" alt="image" src="https://github.com/user-attachments/assets/45520dbd-4147-4876-9775-9b3640473bc3" />
+<img width="740" height="911" alt="image" src="https://github.com/user-attachments/assets/cd67f047-ecb9-4f15-b189-4ebbed18fcc8" />
+<img width="1051" height="1095" alt="image" src="https://github.com/user-attachments/assets/3ada039c-33d2-4676-9a9f-63525f93e985" />
+
+
 
 ## Composants tiers
 
