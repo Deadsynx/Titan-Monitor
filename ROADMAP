@@ -1,25 +1,13 @@
-# Roadmap
+Roadmap
+Future releases
+Automatic language detection
+Detect the Windows display language automatically.
+Display Titan Monitor in the corresponding language when a translation is available.
+Fall back to English when the detected language is not supported.
+Keep hardware sensor names untouched when they come directly from the system or LibreHardwareMonitor.
+Planned languages
+English
+French
+German
 
-## v0.9 — Last Stand
-
-- Optimisation
-- Mode Expert
-- Polish général
-
----
-
-## v1.0
-
-Première version publique
-
----
-
-## v1.1
-
-Export CSV
-
----
-
-## v2.0
-
-Réécriture native C#
+Additional languages may be added in later releases.
