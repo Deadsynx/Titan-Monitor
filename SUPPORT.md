@@ -12,4 +12,4 @@ Merci d'inclure :
 - votre carte graphique
 - votre version de Windows
 - le fichier TitanMonitor.log
-- une capture d'écran si nécessaire
+- une capture d'écran si nécessaire ( avec snipping tools)
