@@ -1,0 +1,64 @@
+Titan Monitor — Third-Party Licenses
+====================================
+
+This file documents the main third-party components distributed with or required
+to build Titan Monitor v1.0.0. Exact package versions should be recorded from
+the final validated Windows build environment before publishing the release.
+
+1) LibreHardwareMonitor
+   License: Mozilla Public License 2.0 (MPL-2.0)
+   Project: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+   Source:  https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+
+   Titan Monitor uses LibreHardwareMonitor through the Python HardwareMonitor
+   package. LibreHardwareMonitor remains licensed under MPL-2.0. Source code for
+   LibreHardwareMonitor is available from the project repository above.
+
+2) HardwareMonitor
+   License: BSD 3-Clause
+   Project: https://pypi.org/project/HardwareMonitor/
+
+3) pythonnet
+   License: MIT
+   Project: https://github.com/pythonnet/pythonnet
+
+4) clr-loader
+   License: MIT
+   Project: https://github.com/pythonnet/clr-loader
+
+   clr-loader is a transitive dependency used by pythonnet and is collected by
+   the PyInstaller build.
+
+5) pywebview
+   License: BSD 3-Clause
+   Project: https://github.com/r0x0r/pywebview
+
+6) pystray
+   License: GNU Lesser General Public License v3.0 (LGPL-3.0)
+   Project: https://github.com/moses-palmer/pystray
+
+   Titan Monitor is distributed with source code and build scripts, allowing users
+   to rebuild the application with a modified version of pystray. pystray itself
+   remains licensed under LGPL-3.0.
+
+7) Pillow
+   License: MIT-CMU
+   Project: https://python-pillow.github.io/
+
+8) PyInstaller
+   License: GPL with a special exception for distributing bundled applications
+   Project: https://pyinstaller.org/
+
+   PyInstaller is used only to build the Windows executable. Its special exception
+   allows the generated executable to be distributed under Titan Monitor's license,
+   subject to the licenses of bundled third-party components.
+
+9) Easter Egg music
+   “Metalcore Music for Extreme Sports” — Farran_Ez
+   License: Pixabay Content License
+   Project/source page: https://pixabay.com/music/
+   Credit used in README:
+   Easter Egg music: “Metalcore Music for Extreme Sports” — Farran_Ez
+   Used under the Pixabay Content License.
+
+Titan Monitor itself is licensed separately under the MIT License; see LICENSE.

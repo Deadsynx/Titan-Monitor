@@ -1,65 +1,97 @@
 # Titan Monitor
 
-> Modern Hardware Monitoring for Windows
+**Cyberpunk hardware monitoring for Windows**  
+Version **1.0.0**
 
-Titan Monitor est un logiciel de surveillance matérielle conçu pour offrir une interface moderne, claire et intuitive.
+Titan Monitor affiche en temps réel les températures et l’utilisation du CPU, du GPU et de la mémoire à partir de LibreHardwareMonitor. Il comprend un tableau de bord cyberpunk, un historique interactif, un overlay, des alertes thermiques, des journaux CSV et un diagnostic local.
 
-Contrairement à d'autres logiciels de monitoring qui affichent des centaines de capteurs, Titan Monitor met en avant uniquement les informations réellement utiles.
+## Fonctions principales
 
----
+- Températures CPU, GPU, hotspot et VRAM selon les sondes disponibles
+- Utilisation CPU, GPU et RAM
+- Graphiques d’historique glissant
+- Overlay noir opaque, déplaçable et à hauteur dynamique
+- RPM CPU FAN et GPU FAN dans l’overlay quand les capteurs sont disponibles
+- Icône System Tray et notifications thermiques
+- Seuils configurables
+- Export automatique en CSV
+- Diagnostic instantané et score de santé indicatif
 
-## ✨ Fonctionnalités
+## Prérequis
 
-- 🌡 Surveillance CPU
-- 🎮 Surveillance GPU
-- 💾 Surveillance SSD / HDD
-- 🧠 Utilisation RAM
-- 📈 Historique
-- 🎮 Overlay Gaming
-- ⚠ Alertes thermiques
-- 🛠 Diagnostics
+- Windows 10 ou 11
+- Python 3.11+ pour lancer les sources
+- Droits administrateur pour accéder aux capteurs matériels
 
----
+```cmd
+python -m pip install -r requirements.txt
+python main.py
+```
 
-## 📸 Captures d'écran
+Le pilote PawnIO est facultatif, mais recommandé pour certaines sondes de carte mère :
 
-<img width="1895" height="1356" alt="image" src="https://github.com/user-attachments/assets/ca170745-79d6-4995-b2ee-33fadf81c3f3" />
-<img width="465" height="365" alt="image" src="https://github.com/user-attachments/assets/fc597df5-51ff-4047-90b6-68b7d6269215" />
-<img width="1568" height="990" alt="image" src="https://github.com/user-attachments/assets/1ceab4b2-6745-4ffb-a174-323b5e145c0b" />
+```cmd
+winget install PawnIO
+```
+
+## Compilation Windows
+
+Ouvre un terminal administrateur dans le dossier du projet puis lance :
+
+```cmd
+build.bat
+```
+
+L’exécutable sera produit dans le dossier `dist`.
+
+## Données utilisateur
+
+Les paramètres et journaux sont stockés dans :
+
+```text
+%LOCALAPPDATA%\Titan Monitor
+```
+
+## Avertissement
+
+Les diagnostics sont indicatifs. Ils ne remplacent pas une vérification matérielle et n’affirment jamais avec certitude la cause d’une anomalie.
+
+## Historique
+
+Consulte [`CHANGELOG.md`](CHANGELOG.md).
+
+## Stockage et tensions
+
+Titan Monitor détecte automatiquement les disques physiques et les volumes locaux :
+
+- type SSD/HDD/NVMe lorsque Windows le fournit ;
+- état de santé et état opérationnel ;
+- pourcentage de santé si le compteur d'usure est disponible ;
+- capacité, espace utilisé et espace libre en Go ;
+- température et heures de fonctionnement si disponibles.
+
+La lecture de santé repose sur les API de stockage Windows. Elle n'égale pas systématiquement le niveau de détail de CrystalDiskInfo : certains contrôleurs ne transmettent pas tous les attributs SMART.
 
 
----
+## Construire la release
 
-## 🚀 Installation
+Pour générer l'exécutable puis l'installateur Windows :
 
-Téléchargez simplement la dernière version :
+```cmd
+build_release.bat
+```
 
-➡ **TitanMonitorSetup.exe**
+Prérequis de compilation : PyInstaller et Inno Setup 6. Le script indique la commande `winget` si Inno Setup manque.
 
-L'assistant s'occupe du reste.
+La release est créée dans `release\`. L'utilisateur final n'a besoin ni de Python ni de pip.
 
-Aucune installation de Python n'est nécessaire.
 
----
+## Composants tiers
 
----
+Titan Monitor utilise plusieurs composants open source tiers. Les notices de licence
+et informations de redistribution sont regroupées dans [`THIRD-PARTY-LICENSES.txt`](THIRD-PARTY-LICENSES.txt).
 
-# ❤️ Remerciements
+## Easter Egg music
 
-Merci à tous ceux qui testent Titan Monitor.
-
-Chaque retour permet d'améliorer le projet.
-
----
-
-## ❤️ Philosophie
-
-Titan Monitor privilégie la simplicité.
-
-L'objectif est de fournir les informations importantes dans une interface agréable et lisible.
-
----
-
-## 📄 Licence
-
-MIT
+Easter Egg music: “Metalcore Music for Extreme Sports” — Farran_Ez  
+Used under the Pixabay Content License.
