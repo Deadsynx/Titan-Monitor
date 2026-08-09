@@ -1,6 +1,6 @@
 # Contribuer à Titan Monitor
 
-Merci !
+Faites vous plaisir !
 
 ## Prérequis
 
